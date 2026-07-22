@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  /* Primary brand color - dental green */
+  --primary: #25443D;
+  --primary-foreground: #ffffff;
+  
+  /* Light theme colors */
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #25443D;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  
+  /* Sidebar specific */
+  --sidebar-background: #f8fafc;
+  --sidebar-foreground: #334155;
+  --sidebar-accent: #25443D;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #e2e8f0;
+  
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--foreground);
+  background: var(--background);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  /* Dark theme colors */
+  --background: #0f172a;
+  --foreground: #f1f5f9;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --popover: #0f172a;
+  --popover-foreground: #f1f5f9;
+  --card: #0f172a;
+  --card-foreground: #f1f5f9;
+  --border: #1e293b;
+  --input: #1e293b;
+  --ring: #25443D;
+  --destructive: #b91c1c;
+  --destructive-foreground: #ffffff;
+  
+  /* Sidebar specific - dark */
+  --sidebar-background: #0f172a;
+  --sidebar-foreground: #cbd5e1;
+  --sidebar-accent: #25443D;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #1e293b;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar for dense admin layout */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--muted-foreground);
+  border-radius: 3px;
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--foreground);
+}
